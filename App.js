@@ -46,7 +46,7 @@ export default class App extends Component {
         <View style={styles.box2}>
           <Text>Yo, box2!</Text>
           <TextInput style={styles.text1} 
-            placeholder = "Type something here"
+            placeholder = "Type something here."
             onChangeText={(text) => this.setState({text})}
             
           />
