@@ -3,7 +3,7 @@ import { Text, View, StyleSheet, TextInput, Button } from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1, 
+    flex: 1,
     flexDirection: 'column'
   }
   ,
@@ -14,19 +14,19 @@ const styles = StyleSheet.create({
     flex: 1
   },
   box2: {
-    backgroundColor : 'skyblue',
+    backgroundColor: 'skyblue',
     justifyContent: "center",
     alignItems: "center",
     flex: 2
   },
   box3: {
-    backgroundColor : 'steelblue',
+    backgroundColor: 'steelblue',
     justifyContent: "center",
     alignItems: "center",
     flex: 3
   },
   text1: {
-    height : 80
+    height: 80
   },
 });
 
@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
 export default class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {text: ''};
+    this.state = { text: '' };
   }
 
   render() {
@@ -45,10 +45,10 @@ export default class App extends Component {
         </View>
         <View style={styles.box2}>
           <Text>Yo, box2!</Text>
-          <TextInput style={styles.text1} 
-            placeholder = "Type something."
-            onChangeText={(text) => this.setState({text})}
-            
+          <TextInput style={styles.text1}
+            placeholder="Type something."
+            onChangeText={(text) => this.setState({ text })}
+
           />
           <Button
             onPress={() => {
@@ -61,7 +61,7 @@ export default class App extends Component {
           <Text>{this.state.text}</Text>
         </View>
       </View>
-      
+
     );
   }
 }
